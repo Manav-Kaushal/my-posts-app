@@ -1,0 +1,49 @@
+$primary-color: #f300a2;
+
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  max-width: 800px;
+  padding: 5rem 0;
+}
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 3em;
+  text-align: center;
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &:active {
+      text-decoration: underline;
+    }
+  }
+}
+.posts {
+  list-style: none;
+  padding: 0;
+  margin: 5em 0;
+  &>li {
+    margin-bottom: 3em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
